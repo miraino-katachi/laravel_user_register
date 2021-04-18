@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // 必要なルーティングのみに限定する
-Route::resource('user', 'UserController', ['only' => ['index','edit','update']])->middleware('auth');
+Route::resource('user', 'UserController')->only(['index', 'edit', 'update'])->middleware('auth');
