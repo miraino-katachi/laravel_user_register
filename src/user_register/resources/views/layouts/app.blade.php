@@ -60,7 +60,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a href="{{ route('user.edit', Auth::user()) }}" class="dropdown-item">会員情報修正</a>
+                                <a href="{{ route('user.edit', Auth::user()) }}" class="dropdown-item">{{ __('Modify') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
