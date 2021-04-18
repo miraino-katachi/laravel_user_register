@@ -62,3 +62,21 @@ Windows環境でも問題なく動きます。
 
 - routes/web.php
   - ユーザー情報表示・修正用のルートを追記。
+
+## 日本語化について
+
+プロジェクトのディレクトリで、下記のコマンドで英語で表示されている部分を日本語化するためのファイルをダンロードできます。
+
+```
+php -r "copy('https://readouble.com/laravel/6.x/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
+php -f install-ja-lang.php
+php -r "unlink('install-ja-lang.php');"
+```
+
+下記のファイルがダウンロードされます。
+- resources/lang/ja/auth.php
+- resources/lang/ja/pagination.php
+- resources/lang/ja/passwords.php
+- resources/lang/ja/validation.php
+
+各ファイルを編集してカスタマイズすることができます。
