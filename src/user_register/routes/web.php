@@ -19,6 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('user', 'UserController@index', [])->middleware('auth');
-Route::resource('user', 'UserController')->middleware('auth');
-// Route::resource('user', 'Auth\RegisterController')->middleware('auth');
+// 必要なルーティングのみに限定する
+Route::resource('user', 'UserController', ['only' => ['index','edit','update']])->middleware('auth');
