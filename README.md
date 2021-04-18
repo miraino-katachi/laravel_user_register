@@ -67,6 +67,10 @@ Windows環境でも問題なく動きます。
 
 プロジェクトのディレクトリで、下記のコマンドで英語で表示されている部分を日本語化するためのファイルをダンロードできます。
 
+こちらを参照してください。
+
+https://readouble.com/laravel/6.x/ja/validation-php.html
+
 ```
 php -r "copy('https://readouble.com/laravel/6.x/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
 php -f install-ja-lang.php
