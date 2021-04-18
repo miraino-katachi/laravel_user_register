@@ -65,18 +65,12 @@ Windows環境でも問題なく動きます。
 
 ## 日本語化について
 
-プロジェクトのディレクトリで、下記のコマンドで英語で表示されている部分を日本語化するためのファイルをダンロードできます。
-
-こちらを参照してください。
-
-https://readouble.com/laravel/6.x/ja/validation-php.html
-
+バリデーションルールなど、英語で表示されている部分を日本語化するためのファイルをダンロードしてインストールすることができます。
 ```
 php -r "copy('https://readouble.com/laravel/6.x/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
 php -f install-ja-lang.php
 php -r "unlink('install-ja-lang.php');"
 ```
-
 下記のファイルがダウンロードされます。
 - resources/lang/ja/auth.php
 - resources/lang/ja/pagination.php
@@ -84,3 +78,8 @@ php -r "unlink('install-ja-lang.php');"
 - resources/lang/ja/validation.php
 
 各ファイルを編集してカスタマイズすることができます。
+
+詳しくは、こちらを参照してください。
+
+https://readouble.com/laravel/6.x/ja/validation-php.html
+
