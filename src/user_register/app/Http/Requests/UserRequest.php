@@ -10,7 +10,7 @@ use Illuminate\Validation\Rule;
 use App\User;
 
 /**
- * UserRiquest ユーザー更新用FormRequestクラス
+ * UserRequest ユーザー更新用FormRequestクラス
  * バリデーションルールとエラーメッセージは、
  * Auth\RegisterControllerクラスと共用したいので、
  * Userモデルに記載しています。
@@ -38,8 +38,8 @@ class UserRequest extends FormRequest
         // バリデーションルールはUserモデルに記載しています。
         $rules = User::$rules;
 
-            // メソッドがPATCHのとき（つまりupdate()アクションが呼ばれるとき）
-            if ($request->method() == 'PATCH') {
+        // メソッドがPATCHのとき（つまりupdate()アクションが呼ばれるとき）
+        if ($request->method() == 'PATCH') {
             // passwordのrequiredの条件を外し、nullableにします。
             $key = array_search('required', $rules['password']);
             unset($rules['password'][$key]);
