@@ -14,5 +14,8 @@
     "City": "市区町村",
     "Town": "町名番地等",
     "Building": "建物等",
-    "Phone Number": "電話番号"
+    "Phone Number": "電話番号",
+    "Required": "必須",
+    "Optional": "任意",
+    "Please enter when you change the password.": "パスワードを変更するときは入力してください。"
 }

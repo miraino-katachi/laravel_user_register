@@ -12,7 +12,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email">
@@ -40,11 +40,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" autocomplete="new-password">
-
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -54,7 +53,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="new-password">
@@ -62,7 +61,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="postal_code" class="col-md-4 col-form-label text-md-right">{{ __('Postal Code') }}</label>
+                            <label for="postal_code" class="col-md-4 col-form-label text-md-right">{{ __('Postal Code') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="postal_code" type="text" class="form-control @error('postal_code') is-invalid @enderror" name="postal_code" value="{{ old('postal_code') }}" autocomplete="postal_code" placeholder="000-0000">
@@ -76,7 +75,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="pref" class="col-md-4 col-form-label text-md-right">{{ __('Prefectures') }}</label>
+                            <label for="pref" class="col-md-4 col-form-label text-md-right">{{ __('Prefectures') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <select name="pref_id" id="pref_id" class="form-control @error('pref_id') is-invalid @enderror">
@@ -95,7 +94,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
+                            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" autocomplete="city" placeholder="大阪市北区">
@@ -109,7 +108,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="town" class="col-md-4 col-form-label text-md-right">{{ __('Town') }}</label>
+                            <label for="town" class="col-md-4 col-form-label text-md-right">{{ __('Town') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="town" type="text" class="form-control @error('town') is-invalid @enderror" name="town" value="{{ old('town') }}" autocomplete="town" placeholder="中之島1丁目1-1">
@@ -123,7 +122,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="building" class="col-md-4 col-form-label text-md-right">{{ __('Building') }}</label>
+                            <label for="building" class="col-md-4 col-form-label text-md-right">{{ __('Building') }}<span class="badge badge-success ml-1 align-middle">{{ __('Optional') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="building" type="text" class="form-control @error('bilding') is-invalid @enderror" name="building" value="{{ old('building') }}" autocomplete="building" placeholder="中之島○○ビル101号室">
@@ -137,7 +136,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}</label>
+                            <label for="phone_number" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number') }}<span class="badge badge-danger ml-1 align-middle">{{ __('Required') }}</span></label>
 
                             <div class="col-md-6">
                                 <input id="phone number" type="tel" class="form-control @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" autocomplete="phone_number" placeholder="06-0000-0000">
